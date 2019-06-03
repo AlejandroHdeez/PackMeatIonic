@@ -16,10 +16,26 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
+      title: 'Login',
       url: '/list',
-      icon: 'list'
-    }
+      icon: 'contact'
+    },
+    {
+      title: 'Register',
+      url: '/register',
+      icon: 'person-add'
+    },
+    {
+      title: 'Offerts',
+      url: '/offerts',
+      icon: 'pricetag'
+    },
+    {
+      title: 'Products',
+      url: '/products',
+      icon: 'cart'
+    },
+    
   ];
 
   constructor(
