@@ -4,24 +4,35 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      List
+      Login<ion-icon name="person-add" style="padding-left: 5px;"></ion-icon>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-item *ngFor="let item of items">
-      <ion-icon [name]="item.icon" slot="start"></ion-icon>
-      {{item.title}}
-      <div class="item-note" slot="end">
-        {{item.note}}
-      </div>
-    </ion-item>
-  </ion-list>
-  <!--
-    <div *ngIf="selectedItem" padding>
-      You navigated here from <b>{{selectedItem.title }}</b>
+<ion-content class="myview">
+
+  <ion-card style="height: 500px; margin-top: 45px;">
+    <ion-card-content>
+      <ion-card-title>
+        ¡Bienvenido!
+      </ion-card-title>
+      <p style="padding-top: 10px;">Ingresa tus datos para poder comprar en PackMeat.</p>
+    </ion-card-content>
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Username</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <div padding>
+      <ion-button expand="block">Login</ion-button>
     </div>
-  -->
+
+  </ion-card>
+
 </ion-content>
