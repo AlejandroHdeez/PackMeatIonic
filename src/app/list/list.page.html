@@ -3,20 +3,21 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
-      Login<ion-icon name="person-add" style="padding-left: 5px;"></ion-icon>
+    <ion-title style="justify-content: center; display: flex;">
+      Login
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="myview">
 
-  <ion-card style="height: 500px; margin-top: 45px;">
+  <ion-card>
     <ion-card-content>
-      <ion-card-title>
+      <ion-card-title style="text-align: center;">
         ¡Bienvenido!
-      </ion-card-title>
-      <p style="padding-top: 10px;">Ingresa tus datos para poder comprar en PackMeat.</p>
+      </ion-card-title><br>
+      <img src="https://www.puntos.themeatpack.com/img/logo.png" />
+      <p style="padding-top: 10px;" style="justify-content: center; display: flex;">Ingresa tus datos para poder comprar en PackMeat.</p>
     </ion-card-content>
     <ion-list>
       <ion-item>
@@ -28,11 +29,21 @@
         <ion-input></ion-input>
       </ion-item>
     </ion-list>
-
     <div padding>
       <ion-button expand="block">Login</ion-button>
     </div>
-
+    <div padding>
+    <a style="justify-content: center; display: flex;" href="https://www.google.com/">
+      ¿Haz olvidado tu contraseña?
+    </a>
+  </div>
+    <div padding style="align-items: center; display: flex; justify-content: center;">
+    <ion-button color="light"><ion-icon name="logo-facebook"></ion-icon> </ion-button>
+    <ion-button color="light"><ion-icon name="logo-twitter"></ion-icon></ion-button>
+    <ion-button color="light"><ion-icon name="logo-google"></ion-icon></ion-button>
+    <ion-button color="light"><ion-icon name="logo-instagram"></ion-icon></ion-button>
+    <ion-button color="light"><ion-icon name="logo-vimeo"></ion-icon></ion-button>
+  </div>
   </ion-card>
 
 </ion-content>

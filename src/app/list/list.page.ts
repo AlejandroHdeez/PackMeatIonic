@@ -37,3 +37,5 @@ export class ListPage implements OnInit {
   //   this.router.navigate(['/list', JSON.stringify(item)]);
   // }
 }
+
+
