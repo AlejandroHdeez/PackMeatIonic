@@ -1,14 +1,49 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title>
-        Register
-      </ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="justify-content: center; display: flex;">
+      Register
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
 
-<ion-content>
-
+<ion-content class="myview">
+  <ion-card>
+    <ion-card-content>
+      <img src="https://www.puntos.themeatpack.com/img/logo.png" />
+      <p style="padding-top: 10px;" style="justify-content: center; display: flex;">Ingresa tus datos para poder registrarte correctamente.</p>
+    </ion-card-content>
+    <ion-card>
+    <ion-list>
+        <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+      <ion-item>
+        <ion-label position="floating">Username</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Repeat your Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-card> 
+    <div padding>
+      <ion-button expand="block" href="/list">Register</ion-button>
+    </div>
+    <div padding style="align-items: center; display: flex; justify-content: center;">
+    <ion-button color="light"><ion-icon name="logo-facebook"></ion-icon> </ion-button>
+    <ion-button color="light"><ion-icon name="logo-twitter"></ion-icon></ion-button>
+    <ion-button color="light"><ion-icon name="logo-google"></ion-icon></ion-button>
+    <ion-button color="light"><ion-icon name="logo-instagram"></ion-icon></ion-button>
+    <ion-button color="light"><ion-icon name="logo-vimeo"></ion-icon></ion-button>
+  </div>
+  </ion-card>
 </ion-content>
